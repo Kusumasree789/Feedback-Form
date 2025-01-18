@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #ff7e5f;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+label {
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+    display: block;
+}
+
+label span {
+    color: #4a4a4a;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+label span.optional {
+    color: #888;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.4);
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ddd;
+    margin: 15px 0;
+}
+
+.star-rating span {
+    transition: color 0.3s ease;
+}
+
+.star-rating .active {
+    color: #ff7e5f;
+}
+
+button {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 126, 95, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 13px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    form {
+        padding: 25px 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 16px;
+        font-size: 17px;
+    }
+}
