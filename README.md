@@ -17,7 +17,3 @@ This repository contains a simple web-based feedback form where users can submit
 ## Contributions
 
 If you'd like to contribute or suggest improvements, please create a pull request.
-
-## License
-
-This project is licensed under the MIT License.
